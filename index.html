@@ -257,7 +257,7 @@
     <div class="effective-meta">
         <span>Effective date: April 2026</span>
         <span class="badge">Version 1.0</span>
-        <span>Local-first · Zero tracking</span>
+        <span>Zero tracking</span>
     </div>
 
     <div class="lang-switch">
@@ -271,16 +271,16 @@
     <div id="lang-en" class="lang-section active">
 
         <div class="highlight-card">
-            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Notes+ does not collect, store, or share any personal data on our servers.</strong> Everything stays on your device, unless you explicitly choose to use the optional Claude AI features with your own API key.</p>
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Notes+ does not collect, store, or share your personal data on our servers.</strong> Your data stays on your device and optionally syncs between your own devices through your private iCloud — we as the developer have no access to it.</p>
         </div>
 
         <h2>What Echo Notes+ Is</h2>
-        <p>Echo Notes+ is an iOS app for capturing thoughts, tasks, and ideas — and finding connections between them. It features a flow of notes, kanban boards for tasks, a graph view of connections ("Synapses"), and a daily "Echo" that resurfaces forgotten notes. The app works entirely on-device — no accounts, no proprietary servers, no cloud sync.</p>
+        <p>Echo Notes+ is an iOS app for capturing thoughts, tasks, and ideas — and finding connections between them. It features a flow of notes, kanban boards for tasks, a graph view of connections ("Synapses"), and a daily "Echo" that resurfaces forgotten notes. The app works on-device and optionally syncs your data between your own devices through your personal iCloud. We have no accounts and no proprietary servers.</p>
 
         <h2>Summary</h2>
         <ul>
-            <li><strong>All your data is stored only on your device.</strong> We do not collect, transmit, or store your notes, tasks, or any other information on our servers.</li>
-            <li><strong>We don't have servers.</strong> Echo Notes+ has no proprietary backend.</li>
+            <li><strong>All your data is stored on your device and in your personal iCloud.</strong> We do not collect, transmit, or store your notes, tasks, or any other information on our servers.</li>
+            <li><strong>We don't have servers.</strong> Echo Notes+ has no proprietary backend — synchronization happens directly through your iCloud.</li>
             <li><strong>No analytics, no ads, no trackers.</strong> The app does not track your activity and does not include third-party data collection SDKs.</li>
             <li><strong>AI-powered features are optional</strong> and only activate if you provide your own Anthropic API key.</li>
         </ul>
@@ -288,7 +288,7 @@
         <h2>Data We Process</h2>
 
         <h3>1. Data you create in the app</h3>
-        <p>Your notes, tasks, lists, timers, connections between notes, and any other information you enter is stored <strong>locally only</strong> on your device via Apple SwiftData. This data never leaves your device, except as described below.</p>
+        <p>Your notes, tasks, lists, timers, connections between notes, and any other information you enter is stored locally on your device via Apple SwiftData. If iCloud is enabled on your device, this data is automatically synced with your other devices through your private iCloud database. Apple is the operator of this synchronization; we as the developer have no access to the contents.</p>
 
         <h3>2. Voice input</h3>
         <p>If you use voice dictation, your speech is processed on-device via Apple's Speech Recognition framework. Recognized text is saved only inside the app. Echo Notes+ does not transmit or store audio recordings.</p>
@@ -318,6 +318,17 @@
             <li>No third-party SDKs that collect data</li>
         </ul>
 
+        <h2>iCloud Synchronization</h2>
+        <p>Echo Notes+ uses Apple CloudKit to sync your data between devices signed in with the same Apple ID.</p>
+        <ul>
+            <li><strong>Data is stored in a private iCloud database</strong> tied to your Apple ID. It is accessible only to you.</li>
+            <li><strong>We as the developer have no access to the contents</strong> of your notes and tasks — they are encrypted by Apple.</li>
+            <li>If iCloud is disabled or you have no iCloud account, the app works locally on your device without synchronization.</li>
+            <li>To disable synchronization, turn off iCloud for Echo Notes+ in iOS system settings (Apple ID → iCloud → Echo Notes+).</li>
+            <li>To delete data from iCloud, delete the app and confirm removal of associated iCloud data in system settings.</li>
+        </ul>
+        <p>Use of iCloud is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a>.</p>
+
         <h2>Third-Party Services</h2>
         <p>Echo Notes+ uses only the following external services, and only by your explicit choice:</p>
         <ul>
@@ -337,7 +348,7 @@
         <p>Echo Notes+ is not directed at children under 13 and does not knowingly collect personal data. Since the app does not collect data at all, it poses no privacy risks to children.</p>
 
         <h2>Your Rights</h2>
-        <p>Since all data is stored locally on your device, you have full control over it at all times. To delete all data associated with Echo Notes+, simply delete the app from your device. Deleting your Claude API key can also be done anytime from the app's Settings screen.</p>
+        <p>You have full control over your data at all times. To delete all local data — simply delete the app from your device. To delete data from iCloud — disable iCloud for the app in system settings, or delete the app and confirm removal of associated data. Deleting your Claude API key can be done anytime from the app's Settings screen.</p>
 
         <h2>Changes to This Policy</h2>
         <p>If this Privacy Policy is updated, the new version will be posted at this URL with an updated effective date. Significant changes will be communicated through an app update notice.</p>
@@ -355,16 +366,16 @@
     <div id="lang-ru" class="lang-section">
 
         <div class="highlight-card">
-            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Notes+ не собирает, не хранит и не передаёт ваши персональные данные на свои серверы.</strong> Всё остаётся на вашем устройстве — если только вы сами не решите воспользоваться опциональными функциями Claude AI с вашим собственным API-ключом.</p>
+            <p style="font-weight: 500; font-size: 1.05rem;"><strong>Echo Notes+ не собирает, не хранит и не передаёт ваши персональные данные на наши серверы.</strong> Данные остаются на вашем устройстве и опционально синхронизируются между вашими устройствами через ваш приватный iCloud — мы как разработчик к ним доступа не имеем.</p>
         </div>
 
         <h2>Что такое Echo Notes+</h2>
-        <p>Echo Notes+ — это iOS-приложение для записи мыслей, задач и идей, а также поиска связей между ними. В приложении есть «Поток» заметок, канбан-доски задач, «Синапсы» (граф связей) и «Эхо» — ежедневное напоминание о забытой заметке. Приложение работает полностью на устройстве — без аккаунтов, без собственных серверов, без облачной синхронизации.</p>
+        <p>Echo Notes+ — это iOS-приложение для записи мыслей, задач и идей, а также поиска связей между ними. В приложении есть «Поток» заметок, канбан-доски задач, «Синапсы» (граф связей) и «Эхо» — ежедневное напоминание о забытой заметке. Приложение работает на устройстве и опционально синхронизирует ваши данные между вашими устройствами через ваш личный iCloud. У нас нет аккаунтов и собственных серверов.</p>
 
         <h2>Краткая суть</h2>
         <ul>
-            <li><strong>Все ваши данные хранятся только на вашем устройстве.</strong> Мы не собираем, не передаём и не храним ваши заметки, задачи или любую другую информацию на наших серверах.</li>
-            <li><strong>У нас нет серверов.</strong> У Echo Notes+ нет собственного бэкенда.</li>
+            <li><strong>Все ваши данные хранятся на вашем устройстве и в вашем личном iCloud.</strong> Мы не собираем, не передаём и не храним ваши заметки, задачи или любую другую информацию на наших серверах.</li>
+            <li><strong>У нас нет серверов.</strong> У Echo Notes+ нет собственного бэкенда — синхронизация работает напрямую через ваш iCloud.</li>
             <li><strong>Нет аналитики, нет рекламы, нет трекеров.</strong> Приложение не отслеживает ваши действия и не содержит сторонних SDK для сбора данных.</li>
             <li><strong>Функции на базе искусственного интеллекта являются опциональными</strong> и активируются только если вы сами добавили свой API-ключ Anthropic.</li>
         </ul>
@@ -372,7 +383,7 @@
         <h2>Какие данные мы обрабатываем</h2>
 
         <h3>1. Данные, которые вы создаёте в приложении</h3>
-        <p>Ваши заметки, задачи, списки, таймеры, связи между заметками и любая другая информация, которую вы вводите — хранится <strong>исключительно локально</strong> на вашем устройстве через Apple SwiftData. Эти данные никогда не покидают ваше устройство, за исключением случаев, описанных ниже.</p>
+        <p>Ваши заметки, задачи, списки, таймеры, связи между заметками и любая другая информация, которую вы вводите — хранится локально на вашем устройстве через Apple SwiftData. Если на устройстве включён iCloud, эти данные автоматически синхронизируются с вашими другими устройствами через приватную базу iCloud. Apple является оператором этой синхронизации; мы как разработчик не имеем доступа к содержимому.</p>
 
         <h3>2. Голосовой ввод</h3>
         <p>Если вы используете функцию диктовки, ваша речь обрабатывается на устройстве через фреймворк Apple Speech Recognition. Распознанный текст сохраняется только внутри приложения. Echo Notes+ не передаёт и не хранит аудиозаписи.</p>
@@ -402,6 +413,17 @@
             <li>Никаких сторонних SDK, собирающих данные</li>
         </ul>
 
+        <h2>Синхронизация через iCloud</h2>
+        <p>Echo Notes+ использует Apple CloudKit для синхронизации ваших данных между устройствами под одним Apple ID.</p>
+        <ul>
+            <li><strong>Данные хранятся в приватной базе iCloud,</strong> привязанной к вашему Apple ID. Они доступны только вам.</li>
+            <li><strong>Мы как разработчик не имеем доступа к содержимому</strong> ваших заметок и задач — оно зашифровано Apple.</li>
+            <li>Если iCloud отключён или у вас нет аккаунта iCloud, приложение работает локально на устройстве без синхронизации.</li>
+            <li>Чтобы отключить синхронизацию, отключите iCloud для Echo Notes+ в системных настройках iOS (Apple ID → iCloud → Echo Notes+).</li>
+            <li>Чтобы удалить данные из iCloud, удалите приложение и в системных настройках выберите удалить связанные с ним данные iCloud.</li>
+        </ul>
+        <p>Использование iCloud регулируется <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности Apple</a>.</p>
+
         <h2>Сторонние сервисы</h2>
         <p>Echo Notes+ использует только следующие внешние сервисы, и только по вашему явному выбору:</p>
         <ul>
@@ -421,7 +443,7 @@
         <p>Echo Notes+ не ориентирован на детей младше 13 лет и не собирает персональные данные сознательно. Поскольку приложение не собирает данные вообще, оно не представляет рисков для приватности детей.</p>
 
         <h2>Ваши права</h2>
-        <p>Поскольку все данные хранятся локально на вашем устройстве, вы в любой момент имеете полный контроль над ними. Чтобы удалить все данные, связанные с Echo Notes+, просто удалите приложение с устройства. Удалить API-ключ Claude можно в любой момент через Настройки приложения.</p>
+        <p>Вы в любой момент имеете полный контроль над своими данными. Чтобы удалить все локальные данные Echo Notes+ — просто удалите приложение с устройства. Чтобы удалить данные из iCloud — отключите iCloud для приложения в системных настройках или удалите приложение и подтвердите удаление связанных данных. Удалить API-ключ Claude можно в любой момент через Настройки приложения.</p>
 
         <h2>Изменения политики</h2>
         <p>Если политика будет обновлена, новая версия будет опубликована по этому же адресу с обновлённой датой вступления в силу. О существенных изменениях пользователи будут проинформированы через обновление приложения.</p>
